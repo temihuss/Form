@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <form id="studentForm">
+    <h1>Student Registration Form</h1>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="firstName">Full name:</label>
+        <input type="text" id="firstName">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob">
+
+        <br> <br>
+
+        <label for="email">&nbsp;&nbsp;Email: </label>
+        <input type="email" id="email">
+        
+        <label for="phone">Phone Number: </label>
+        <input type="tel" id="phone" placeholder="+251 929 686 605">
+
+        <br> <br>
+
+        <label for="Pwd">Passowrd: </label>
+        <input type="password" id="Pwd">
+
+        <label for="age">Age: </label>
+        <input type="number" id="age">
+
+        <br> <br>
+
+        <label for="gender">Gender: </label>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Courses</legend>
+
+        <label>Courses interested: </label>
+
+        <input type="checkbox" id="cs" value="CS">CS
+        <input type="checkbox" id="is" value="IS">IS
+        <input type="checkbox" id="swe" value="SWE">SWE
+
+        <br> <br>
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Other Informations</legend>
+
+        <label for="color">Favorite Color: </label>
+        <input type="color" id="color">
+
+        <label for="mark">Expected Marks: </label>
+        <input type="range" id="marks" min="1" max="100" value="100">
+
+        <br> <br>
+
+        <label for="portfolio">Portfolio URL:</label>
+        <input type="url" id="portfolio" placeholder="https://example.com">
+
+        <label for="photo">Upload Photo: </label>
+        <input type="file" id="photo">
+
+        <br> <br>
+
+        <label for="search">Search Something: </label>
+        <input type="text" id="search">
+
+        <label for="address">Address:</label>
+        <textarea id="address"></textarea>
+
+    </fieldset>
+    
+    
+    <br> <br>
+
+    <a href="audio.html" target="_blank ">
+        <input type="button" value="Link to audio and Video">
+    </a>
+
+    <button type="submit">Submit</button>
+    <input type="reset" value="Reset">
+
+    <h2>Submitted Data</h2>
+    <div class="displayArea">
+        <textarea rows="10" cols="50" id="display" placeholder="Informations filled in the form will be displayed here"></textarea>
+    </div>
+
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
